@@ -1,0 +1,45 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "resourceName": {
+            "value": "aks-cio-bootcamp26"
+        },
+        "kubernetesVersion": {
+            "value": "1.18.14"
+        },
+        "networkPlugin": {
+            "value": "azure"
+        },
+        "enableRBAC": {
+            "value": true
+        },
+        "enablePrivateCluster": {
+            "value": false
+        },
+        "enableHttpApplicationRouting": {
+            "value": false
+        },
+        "vmssNodePool": {
+            "value": true
+        },
+        "existingVirtualNetworkName": {
+            "value": "Hack2021_default_group-vnet"
+        },
+        "existingVirtualNetworkResourceGroup": {
+            "value": "Hack2021_default_group"
+        },
+        "existingSubnetName": {
+            "value": "AKS"
+        },
+        "serviceCidr": {
+            "value": "192.168.0.0/24"
+        },
+        "dnsServiceIP": {
+            "value": "192.168.0.10"
+        },
+        "dockerBridgeCidr": {
+            "value": "172.17.0.1/16"
+        }
+    }
+}
